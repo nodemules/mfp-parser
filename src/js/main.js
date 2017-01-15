@@ -102,10 +102,7 @@
           for (let k in items[itemName]) {
             k.includes(rowName) ? maxCount++ : null;
           }
-          rowName += ` ($ {
-          maxCount + 1
-        })
-        `;
+          rowName += ` (${maxCount + 1})`;
         }
         items[itemName][rowName] = {};
         for (let j = 1; j < rows[i].cells.length; j++) {
